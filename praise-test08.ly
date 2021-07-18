@@ -90,26 +90,94 @@ textOneEn = \lyricmode {
 
 \score {
   <<
-    \new Voice = "upper" {
-      \soprano
+    \new Staff {
+      \new Voice = "upper" {
+        << \soprano \\ \alto>>
+      }
     }
-    \new Lyrics \lyricsto "upper" {
-      \textOneCn 
-    }
-    \new Lyrics \lyricsto "upper" {
-      \textOneEn 
-    }
+    \addlyrics \textOneCn 
+    \addlyrics \textOneEn 
 
     %\new Voice = "altos" { << \soprano \\ \alto >> }
-    
-    %\new Lyrics \lyricsto "altos" \textOneCn
-    
-    %\new Lyrics \textOneEn
-    %\new Staff  {
-    %  \new Voice { << \tenor   \\ \bass >> }
-    %}
+    %\new Lyrics \lyricsto "altos" \textOneCn %\lyricsto conflict with << \\ >>
+
+    \new Staff  {
+      \new Voice { << \tenor   \\ \bass >> }
+    }
   >>
   \layout {}
   \midi {\tempo 4 = 140}
 }
+\markup {
+  \fill-line {
+    ""
+    {
+      \column {
+        \left-align {
+          "二、千萬聲感謝我主，"
+          "　　他愛深高闊長，" 
+          "　　他的恩典已流露，"
+          "　　他以自己下賞； "
+          "　　哦，我心何等滿足，"
+          "　　已得宇宙至寶！ "
+          "　　千萬聲感謝我主，"
+          "　　我今已成富豪！"
+          " "
+          "三、千萬顆心歸我主，"
+          "　　帶著無比歡喜！ "
+          "　　千萬條命活為主，"
+          "　　只要祂給氣息！ "
+          "　　千萬舌頭讚耶穌，"
+          "　　千萬首詩獻上；" 
+          "　　給祂我的親愛主，"
+          "　　給祂我的君王！"
+          " "
+          "四、感謝我主千萬聲，"
+          "　　為這許多祝福， "
+          "　　千萬聲千千萬聲，"
+          "　　千萬聲感謝主；"
+          "　　 那日祂要迎我們，"
+          "　　在無終榮耀裡，"
+          "　　 祂愛長闊又高深，"
+          "　　是我美麗詩題！"
+        }
+      }
+      \column {
+        \left-align {
+          "2. Ten thousand thanks to Jesus "
+          "　　His love is ever same" 
+          "　　His grace has poured out for you," 
+          "　　Our reward he became; "
+          "　　O, satisfied out hearts are" 
+          "　　For Jesus Christ we’ve gained." 
+          "　　Ten thousand thanks to Jesus" 
+          "　　Great riches we’ve attained."
+          " "
+          "3. Ten thousand hearts to Jesus "
+          "　　How gladly would we give; "
+          "　　Ten thousand lives to Jesus, "
+          "　　Had we so long to live; "
+          "　　Ten thousand tongues shall praise Him, "
+          "　　Ten thousand songs ascend "
+          "　　To Him, our blest Redeemer, "
+          "　　To Him, our dearest Friend."
+          " "
+          "4. Ten thousand thanks to Jesus "
+          "　　For blessings every hour; "
+          "　　Ten thousand times ten thousand, "
+          "　　For love's redeeming pow'r; "
+          "　　And when He comes in glory"
+          "　　His blessed face we'll see," 
+          "　　His love through endless ages "
+          "　　Our sweetest song shall be."
+        }
+      }
+    }
+    ""
+  }
+}
+\paper {  % Start paper block
+  indent = 0     % don't indent first system
+  line-width = 160   % shorten line length to suit music
+}  % End paper block
 
