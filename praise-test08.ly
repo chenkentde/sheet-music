@@ -8,7 +8,9 @@
 \header {
   title = "謝千萬聲"
   subtitle = "Praise Of The Lord"
-  composer = "Composer"
+  subsubtitle = "Ten Thousand Thanks to Jesus"
+  composer = "William J. Kirkpatrick"
+  poet = "Matilda C. Day 1887"
 }
 global= {
   \time 4/4
@@ -111,7 +113,7 @@ textOneEn = \lyricmode {
 \markup {
   \abs-fontsize #14
   %\fill-line {
-    ""
+    \hspace #6
     {
       \column { \abs-fontsize #13
         \left-align {
@@ -127,22 +129,23 @@ textOneEn = \lyricmode {
           "三、千萬顆心歸我主，"
           "　　帶著無比歡喜！ "
           "　　千萬條命活為主，"
-          "　　只要祂給氣息！ "
+          "　　只要他給氣息！ "
           "　　千萬舌頭讚耶穌，"
           "　　千萬首詩獻上；" 
-          "　　給祂我的親愛主，"
-          "　　給祂我的君王！"
+          "　　給他我的親愛主，"
+          "　　給他我的君王！"
           " "
           "四、感謝我主千萬聲，"
           "　　為這許多祝福， "
           "　　千萬聲千千萬聲，"
           "　　千萬聲感謝主；"
-          "　　 那日祂要迎我們，"
+          "　　那日他要迎我們，"
           "　　在無終榮耀裡，"
-          "　　 祂愛長闊又高深，"
+          "　　他愛長闊又高深，"
           "　　是我美麗詩題！"
         }
       }
+      \hspace #8
       \column { \abs-fontsize #13
         \left-align {
           "2. Ten thousand thanks to Jesus "
@@ -174,11 +177,11 @@ textOneEn = \lyricmode {
         }
       }
     }
-    ""
+    
   %}
 }
 \paper {  % Start paper block
   indent = 0     % don't indent first system
-  line-width = 160   % shorten line length to suit music
+  line-width = 170   % shorten line length to suit music
 }  % End paper block
 
