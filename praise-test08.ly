@@ -109,10 +109,11 @@ textOneEn = \lyricmode {
   \midi {\tempo 4 = 140}
 }
 \markup {
-  \fill-line {
+  \abs-fontsize #14
+  %\fill-line {
     ""
     {
-      \column {
+      \column { \abs-fontsize #13
         \left-align {
           "二、千萬聲感謝我主，"
           "　　他愛深高闊長，" 
@@ -142,7 +143,7 @@ textOneEn = \lyricmode {
           "　　是我美麗詩題！"
         }
       }
-      \column {
+      \column { \abs-fontsize #13
         \left-align {
           "2. Ten thousand thanks to Jesus "
           "　　His love is ever same" 
@@ -174,7 +175,7 @@ textOneEn = \lyricmode {
       }
     }
     ""
-  }
+  %}
 }
 \paper {  % Start paper block
   indent = 0     % don't indent first system
