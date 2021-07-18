@@ -1,10 +1,5 @@
 %\version  "2.18"
 
-\paper{
-  top-margin = 0.5\in
-  indent = 0\mm
-  %line-width = 155\mm
-}
 \header {
   title = "謝千萬聲"
   subtitle = "Praise Of The Lord"
@@ -177,7 +172,7 @@ textOneEn = \lyricmode {
         }
       }
     }
-    
+    \hspace #6
   %}
 }
 \paper {  % Start paper block
