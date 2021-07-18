@@ -94,9 +94,9 @@ textOneEn = \lyricmode {
       \new Voice { << \soprano \\  >> }
       %\new Voice { << \soprano \\ \alto >> }
     }
-    %\addlyrics \textOneCn
+    \addlyrics \textOneCn
       %\addlyrics \lyricmode {\textCn} %test \textCn
-    %\addlyrics \textOneEn
+    \addlyrics \textOneEn
     \new Staff {
       %\new Voice { << \tenor   \\ \bass >> }
     }
