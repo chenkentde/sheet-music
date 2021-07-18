@@ -72,7 +72,7 @@ bass ={
 }
 
 textOneCn = \lyricmode {
-  千 萬 聲 感 謝 我 主 祂 命 為 我 傾 倒。 祂 的 寶 血 已 流 出， 成 功 救 贖 新 造。 
+  千 萬 聲 感 謝 我 主 他 命 為 我 傾 倒。 他 的 寶 血 已 流 出， 成 功 救 贖 新 造。 
   讓 每 顆 心 敬 拜 主， 每 一 受 造 歌 唱。 千 萬 聲 感 謝 我 主， 我 救 主， 我 君 王。
   謝 千 萬 聲 謝 千 萬 聲， 讚 美 不 住 添 增， 與 主 同 住 恩 典 一 生 惟 感 謝 千 萬 聲。
 }
@@ -91,14 +91,12 @@ textOneEn = \lyricmode {
 \score {
   <<
     \new Staff {
-      \new Voice { << \soprano \\  >> }
-      %\new Voice { << \soprano \\ \alto >> }
+      \new Voice { << \soprano \\ \alto >> }
     }
     \addlyrics \textOneCn
-      %\addlyrics \lyricmode {\textCn} %test \textCn
     \addlyrics \textOneEn
     \new Staff {
-      %\new Voice { << \tenor   \\ \bass >> }
+      \new Voice { << \tenor   \\ \bass >> }
     }
   >>
   \layout {}
