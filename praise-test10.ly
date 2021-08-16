@@ -73,6 +73,14 @@ textOneCn = \lyricmode {
   讓 每 顆 心 敬 拜 主， 每 一 受 造 歌 唱。 千 萬 聲 感 謝 我 主， 我 救 主， 我 君 王。
   謝 千 萬 聲 謝 千 萬 聲， 讚 美 不 住 添 增， 與 主 同 住 恩 典 一 生 惟 感 謝 千 萬 聲。
 }
+textOnePY = \lyricmode {
+  qiān  wàn  shēng  gǎn  xiè  wǒ  zhǔ  tā  mìng  wéi  wǒ  qīng  dǎo。 
+  tā  de  bǎo  xuè  yǐ  liú  chū， chéng  gōng  jiù  shú  xīn  zào。 
+  ràng  měi  kē  xīn  jìng  bài  zhǔ， měi  yī  shòu  zào  gē  chàng。 
+  qiān  wàn  shēng  gǎn  xiè  wǒ  zhǔ， wǒ  jiù  zhǔ， wǒ  jūn  wáng。
+  xiè  qiān  wàn  shēng  xiè  qiān  wàn  shēng， zàn  měi  bù  zhù  tiān  zēng，
+  yǔ  zhǔ  tóng  zhù  ēn  diǎn  yī  shēng  wéi  gǎn  xiè  qiān  wàn  shēng。
+}
 
 textOneEn = \lyricmode {
   Ten thou- sand thanks to Je- sus, Whose life our ran- som paid, 
@@ -93,6 +101,7 @@ textOneEn = \lyricmode {
       }
     }
     \addlyrics \textOneCn 
+    \addlyrics \textOnePY
     \addlyrics \textOneEn 
 
     %\new Voice = "altos" { << \soprano \\ \alto >> }
